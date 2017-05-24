@@ -35,7 +35,6 @@ end
 data_root='CSumm'; 
 objects_dir=[data_root '/parent_child.mat'];
 places_dir=[data_root '/categories.mat'];
-data_root='/media/ana/My Book/Lifelogging/TESTING';
 
 addpath(genpath(code_mrf))  
 addpath(genpath('aux_functions'))  
@@ -56,12 +55,15 @@ if storing
     end
 end
 
+pool=parpool('local',2); %matlabpool open 2
+
 %Only the first time using AVS: extract images from the videos
 error(sprintf('\nACTION FOR USER!!:\n\nRemove this error message to extract the frames for CSumm dataset in Unix.\nYou can open several MATLAB labs for a faster extraction. Once the frames have been extracted, set this condition to false.\n\nIf using Windows, we recommend using avconv on "Bash on Ubuntu on Windows"'))    
 if true
-cd(data_root)
-extract_frames
-cd('../')
+    current_folder=pwd;
+    cd(data_root)
+    extract_frames
+    cd(current_folder)
 end
 
 
@@ -626,3 +628,5 @@ catch
     'summary_satisfaction', 'clicks','final_summary',...
     'user','task','task_description','seg_q');
 end
+
+delete(pool) % matlabpool close
