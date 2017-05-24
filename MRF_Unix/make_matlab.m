@@ -1,0 +1,1 @@
+mex  mrf.cc maxflow.o kgraph.o  ./TRW/MRFEnergy.o ./TRW/minimize.o ./TRW/ordering.o ./TRW/treeProbabilities.o

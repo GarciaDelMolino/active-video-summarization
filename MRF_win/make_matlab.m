@@ -1,0 +1,1 @@
+mex -v COMPFLAGS="/c /GR /W3 /EHs /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0 /DMATLAB_MEX_FILE /nologo /MT" mrf.cc maxflow.obj kgraph.obj  MRFEnergy.obj minimize.obj ordering.obj treeProbabilities.obj

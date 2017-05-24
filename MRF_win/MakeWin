@@ -1,0 +1,4 @@
+#Change LibPath for your MATLAb path and version:
+cl /EHsc mrf.cpp maxflow.cpp kgraph.cpp TRW\MRFEnergy.cpp TRW\minimize.cpp TRW\ordering.cpp TRW\treeProbabilities.cpp /link /LIBPATH:"..\..\..\..\..\..\Program Files\MATLAB\R2011b\extern\include" /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:MSVCRT
+
+
