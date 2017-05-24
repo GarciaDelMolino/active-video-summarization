@@ -13,7 +13,7 @@ Customized summarization of egocentric videos through minimal user interaction
 
 ## Dataset
 
-AVS.m can be used as a demo with CSumm, as the features for some of the videos are provided (the audio has been removed from the videos for privacy purposes). 
+AVS.m can be used as a demo with CSumm (the videos can be downloaded [here](https://drive.google.com/open?id=0BxbxH0v4gna2d0xyMjlKUTRnZmM)), as the features for some of the videos are provided (the audio has been removed from the videos for privacy purposes). 
 AVS has been tested on CSumm, UTEgo, and four videos in SumMe.
 Alternatively, any other video data can be used, as long as the needed features can be extracted.
 
