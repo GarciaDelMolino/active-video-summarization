@@ -8,8 +8,11 @@ Customized summarization of egocentric videos through minimal user interaction a
 		Good Linux installation tutorial: https://github.com/tiangolo/caffe/blob/ubuntu-tutorial-b/docs/install_apt2.md
 		Model Zoo (places, objects, etc): https://github.com/BVLC/caffe/wiki/Model-Zoo 
 	2) C++ compiler
-	3) MATLAB
+	3) MATLAB*
 	4) avconv/ffmpeg or any other tool to extract the frames from the video.
+	
+	
+	*Please note that Matlab R2011b was used to implement and test AVS. Therefore, if using newer versions, some functions (e.g. ismember) may need a 'legacy' flag.
 
 ## Dataset
 
